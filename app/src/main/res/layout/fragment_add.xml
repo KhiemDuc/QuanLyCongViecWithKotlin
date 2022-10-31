@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.add.AddFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/s_t_ng_y_k_t_th_c_c_ng_vi_c"
+            android:textColor="#333335"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dateTv"
+            android:layout_width="335dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:hint="@string/ch_n_ng_y"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="332dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:gravity="start"
+            android:hint="@string/nh_p_m_t_c_ng_vi_c"
+            android:lines="3"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_task" />
+
+        <EditText
+            android:id="@+id/edt_task"
+            android:layout_width="237dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="@string/enter_task"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="202dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="48dp"
+            android:entries="@array/priorities"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateTv" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateTv"
+            app:layout_constraintVertical_bias="0.412" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

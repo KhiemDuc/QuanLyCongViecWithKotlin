@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quản Lý Công Việc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Tìm Kiếm</string>
+    <string name="sort_by_high_priority">Sort by High Priority</string>
+    <string name="delete_all">Delete all</string>
+    <string name="enter_task">Nhập tiêu đề công việc</string>
+    <string name="add">Thêm</string>
+    <string name="update">Cập nhật</string>
+    <string name="nh_p_m_t_c_ng_vi_c">Nhập mô tả công việc</string>
+    <string name="s_t_ng_y_k_t_th_c_c_ng_vi_c">Sét ngày kết thúc công việc</string>
+    <string name="ch_n_ng_y">Chọn ngày</string>
+    <string-array name="priorities">
+        <item>Chưa Hoàn Thành</item>
+        <item>Đang Làm</item>
+        <item>Hoàn Thành</item>
+    </string-array>
+</resources>
